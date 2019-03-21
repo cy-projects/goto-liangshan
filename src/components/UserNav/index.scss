@@ -1,0 +1,78 @@
+.main-header{
+  border-bottom: 1px solid #eee;
+  padding: 10px 0 0 0;
+
+  .photo{
+    padding: 10px 0;
+
+    .photo-box{
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+
+      span{
+        border-radius: 50px;
+        overflow: hidden;
+
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+  .name{
+    text-align: center;
+    padding: 5px 0;
+    // height: 30px;
+    // line-height: 30px;
+
+    .name-en{
+      font-weight: 600;
+    }
+    .name-cn{
+      color: #999;
+    }
+  }
+  .motto{
+    text-align: center;
+    padding: 5px 0;
+
+    i{
+      margin: 0;
+      vertical-align: top;
+      padding-left: 10px;
+      cursor: pointer;
+      color: #666;
+      &:hover{ color: #00aeef;}
+    }
+  }
+  .job{
+    padding: 10px 0 20px 0;
+    text-align: center;
+
+    .city{
+      margin-right: 20px;
+    }
+  }
+  .user-nav{
+
+    .user-nav-box{
+      position: relative;
+      height: 50px;
+      line-height: 50px;
+
+      .user-nav-menu{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
+
+        li{
+          height: 50px;
+        }
+      }
+    }
+  }
+}

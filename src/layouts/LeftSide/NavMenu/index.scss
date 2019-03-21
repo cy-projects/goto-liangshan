@@ -1,0 +1,47 @@
+.layout-left{
+  .ant-menu.sidebar-nav{
+    border-right: none;
+
+    .ant-menu-item {
+      font-size: 20px;
+      color: #000;
+      font-weight: 600;
+      height: 50px;
+      line-height: 50px;
+
+      &::after{
+        transition: all 0s;
+      }
+
+      a {
+        vertical-align: middle;
+        color: #000;
+
+        i {
+          font-size: 30px;
+          vertical-align: middle;
+          opacity: 0;
+        }
+      }
+    }
+    .ant-menu-item.ant-menu-item-selected{
+      background-color: initial;
+
+      &::after{
+        border-right: 0;
+      }
+
+      a{
+        // color: #00aeef;
+        // color: #108ee9;
+        font-size: 30px;
+
+        i{
+          opacity: 1;
+        }
+      }
+    }
+
+
+  }
+}

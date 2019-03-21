@@ -1,0 +1,56 @@
+.preview-item{
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #eee;
+
+  .left{
+    float: left;
+    width: 650px;
+
+    h3{
+      height: 50px;
+      line-height: 50px;
+
+
+      a{
+        font-weight: 600;
+        color: #000;
+        font-size: 18px;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .desc{
+      color: #666;
+      height: 78px;
+      line-height: 26px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .info{
+      color: #999;
+
+      a{
+        color: #999;
+
+        &:hover{
+          color: #00aeef;
+        }
+      }
+      .line{
+        padding: 0 10px;
+      }
+    }
+
+  }
+  .right{
+    float: right;
+    width: 200px;
+    height: initial;
+
+    &>div{
+      width: auto;
+    }
+  }
+}

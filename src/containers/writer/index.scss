@@ -1,0 +1,161 @@
+.writer-wangeditor, .writer-simplemde{
+  position: relative;
+
+  .writer-fixed{
+    position: fixed;
+    top: 100px;
+    right: 50%;
+    width: 964px;
+    height: 60px;
+    padding-top: 20px;
+    -webkit-transform: translateX(600px);
+    -ms-transform: translateX(600px);
+    transform: translateX(600px);
+    background: #fff;
+    z-index: 60;
+  }
+  .writer-opt{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 200;
+
+    .ant-btn{
+      margin-left: 10px;
+      min-width: 80px;
+    }
+  }
+  .writer-editor-title{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    // border-bottom: 1px solid #eee;
+
+
+    .ant-input{
+      height: 40px;
+      line-height: 38px;
+      color: #000;
+      font-weight: 600;
+      font-size: 18px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-radius: 0;
+      border-color: #eee;
+
+      &:focus, &:hover{
+        border-color: #49a9ee;
+      }
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
+  .writer-box{
+    position: relative;
+    padding-top: 80px;
+  }
+}
+
+//wangeditor编辑器
+.writer-wangeditor{
+  .writer-box-toolbar{
+    position: fixed;
+    top: 160px;
+    right: 50%;
+    width: 964px;
+    -webkit-transform: translateX(600px);
+    -ms-transform: translateX(600px);
+    transform: translateX(600px);
+    z-index: 100;
+    background: #fff;
+    padding: 0;
+  }
+  .writer-box-text .w-e-text{
+    min-height: 600px;
+    //
+    // &::before{
+    //   color: rgba(0, 0, 0, 0.6);
+    //   content: atrr(data-placeholder);
+    //   font-style: italic;
+    //   pointer-events: none;
+    //   position: absolute;
+    // }
+  }
+}
+
+// simplemde编辑器
+.writer-simplemde{
+
+  .simplemde {
+    .editor-toolbar{
+      position: fixed;
+      top: 160px;
+      right: 50%;
+      width: 964px;
+      height: 40px;
+      line-height: 40px;
+      -webkit-transform: translateX(600px);
+      -ms-transform: translateX(600px);
+      transform: translateX(600px);
+      z-index: 100;
+      background: #fff;
+      border: none;
+      padding: 0;
+      opacity: 1;
+
+      &::before, &::after{
+        margin: 0;
+        height: 0;
+      }
+
+      i{
+        height: 30px;
+      }
+
+      a{
+        opacity: 0.6;
+
+        &.active, &:hover{
+          opacity: 1;
+        }
+      }
+    }
+    .editor-toolbar.fullscreen{
+      width: 100% !important;
+      top: 0;
+      left: 0;
+      height: 50px;
+      line-height: 50px;
+      z-index: 99999;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    .CodeMirror{
+      min-height: 600px;
+      border: none;
+      padding: 0 8px;
+
+      .CodeMirror-vscrollbar{
+        display: none !important;
+      }
+      .CodeMirror-scroll{
+        min-height: 600px;
+      }
+    }
+    .CodeMirror.CodeMirror-fullscreen{
+      z-index: 99999;
+      border: 1px solid #ddd;
+
+      .CodeMirror-vscrollbar{
+        display: block !important;
+      }
+    }
+    .editor-preview-side{
+      z-index: 99999;
+    }
+  }
+}

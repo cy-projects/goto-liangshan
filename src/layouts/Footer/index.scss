@@ -1,0 +1,59 @@
+.footer{
+  .footer-container{
+    height: 160px;
+
+    &>div{float: left;}
+    ul{ margin-bottom: 0; }
+    ul li{
+      height: 50px;
+      line-height: 50px;
+
+      a{font-size: 16px;}
+    }
+    .contact{
+      width: 300px;
+
+      a i{ vertical-align: middle; }
+    }
+    .link{
+      width: 200px;
+
+      li{text-align: center;}
+    }
+    .kf{
+      float: left;
+      width: 300px;
+
+      ul{font-size: 16px;}
+    }
+    .qr{
+      float: right;
+
+      li{
+        float: left;
+        height: initial;
+        line-height: initial;
+
+        div{
+          width: 130px;
+          background: #fff;
+        }
+
+        p{
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          margin-bottom: 0;
+        }
+      }
+      li.weixin div{
+        margin-left: 5px;
+        padding: 10px;
+      }
+    }
+  }
+  .copyright{
+    height: 40px;
+    line-height: 40px;
+  }
+}
